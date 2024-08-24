@@ -94,3 +94,11 @@ li, a {
     background-color: #F5F5F5;
     color: #0088a9;
 }
+
+.avatar {
+    width: 400px;
+    height: auto;
+    margin-left: 10%;
+    border-radius: 200px;
+    box-shadow: 1px 1px 20px #252525;
+}
