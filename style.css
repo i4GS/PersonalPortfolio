@@ -102,3 +102,23 @@ li, a {
     border-radius: 200px;
     box-shadow: 1px 1px 20px #252525;
 }
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer a{
+    font-weight: 900;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #0088a9;
+}
