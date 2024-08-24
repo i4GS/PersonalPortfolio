@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo"><a href="/">i4.GS</a></div>
+        <nav>
+            <ul class="nav_links">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="./About">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+        </div>
+    </section>
+
+    <script>
+        fetch('/particlesjs-config.json')
+            .then(response => response.json())
+            .then(config => {
+                particlesJS('particles-js', config);
+            })
+            .catch(error => console.error('Error loading particles.js config:', error));
+    </script>
+</body>
+</html>
