@@ -4,29 +4,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.logo {
     font-family: "Montserrat", sans-serif;
-    font-weight: bolder;
-    font-size: 16px;
-    color: red;
-    cursor: pointer;
-    margin-right: auto;
-}
-
-li, a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: #252525;
-    text-decoration: none;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px 10%;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+li, a {
+    font-weight: 700;
+    font-size: 18px;
+    color: #252525;
+    text-decoration: none;
 }
 
 .nav_links {
@@ -43,5 +42,55 @@ header {
 }
 
 .nav_links li a:hover {
+    color: #0088a9;
+}
+
+.home {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    width: 600px;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.home-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px 0px;
+}
+
+.home-content p {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    margin: 20px 0px;
+}
+
+.home-content .btn-box {
+    height: 50px;
+}
+
+.home-content .btn-box a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0088a9;
+    color: #F5F5F5;
+    width: 180px;
+    height: 100%;
+    border: 2px solid #0088a9;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+
+.home-content .btn-box a:hover {
+    background-color: #F5F5F5;
     color: #0088a9;
 }
