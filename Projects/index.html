@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div id="wrapper">
+        <div id="navbar">
+            <header>
+                <div class="logo"><a href="../">i4.GS</a></div>
+                <nav>
+                    <ul class="nav_links">
+                        <li class="active"><a href="../">Home</a></li>
+                        <li><a href="../About/">About</a></li>
+                        <li><a href="../Skills/">Skills</a></li>
+                        <li><a href="../Projects/">Projects</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Experience</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    
+        <div id="content">
+            <div class="card-container">
+                <div class="card">
+                    <img src="../assets/images/card-background.jpg" alt="card-background">
+                    <!--Loan Calculator-->
+                    <div class="card-content">
+                        <h3>Loan Calculator</h3>
+                        <p>Start Date: 03 Jun 2024</p>
+                        <div class="hashtag-container">
+                            <p class="hashtag">#Java</p>    
+                            <p class="hashtag">#AndroidStudio</p>
+                        </div>
+                        <a href="https://github.com/i4GS/LoanCalculator" target="_blank" rel="noopener noreferrer" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../assets/images/card-background.jpg" alt="card-background">
+                    <!--Personal Portfolio-->
+                    <div class="card-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>Start Date: 23 Aug 2024</p>
+                        <div class="hashtag-container">
+                            <p class="hashtag">#HTML</p>    
+                            <p class="hashtag">#CSS</p>
+                            <p class="hashtag">#Javascript</p>
+                        </div>
+                        <a href="https://github.com/i4GS/PersonalPortfolio" target="_blank" rel="noopener noreferrer" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../assets/images/card-background.jpg" alt="card-background">
+                    <!--eShop Telegram Bot-->
+                    <div class="card-content">
+                        <h3>eShop Telegram Bot</h3>
+                        <p>Start Date: 14 July 2024</p>
+                        <div class="hashtag-container">
+                            <p class="hashtag">#Javascript</p>    
+                            <p class="hashtag">#NodeJS</p>
+                        </div>
+                        <a href="https://github.com/i4GS/eShopTelegramBot" target="_blank" rel="noopener noreferrer" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <footer>
+                <p>&copy 2024 Made by &nbsp<a href="https://www.i4.gs" target="_blank"
+                        rel="noopener noreferrer">i4.GS</a>&nbsp&nbsp |&nbsp&nbsp Open Source Project: <a
+                        href="https://github.com/i4GS/PersonalPortfolio" target="_blank"
+                        rel="noopener noreferrer">&nbspGithub</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        fetch('../particlesjs-config.json')
+            .then(response => response.json())
+            .then(config => {
+                particlesJS('particles-js', config);
+            })
+            .catch(error => console.error('Error loading particles.js config:', error));
+    </script>
+</body>
+</html>
