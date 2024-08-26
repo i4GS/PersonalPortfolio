@@ -10,25 +10,40 @@
 <body>
     <div id="particles-js"></div>
 
-    <header>
-        <div class="logo"><a href="../">i4.GS</a></div>
-        <nav>
-            <ul class="nav_links">
-                <li class="active"><a href="../">Home</a></li>
-                <li><a href="../About/">About</a></li>
-                <li><a href="../Skills/">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="about">
-        <div class="about-content">
-            <h1>About Me</h1>
+    <div id="wrapper">
+        <div id="navbar">
+            <header>
+                <div class="logo"><a href="../">i4.GS</a></div>
+                <nav>
+                    <ul class="nav_links">
+                        <li class="active"><a href="../">Home</a></li>
+                        <li><a href="../About/">About</a></li>
+                        <li><a href="../Skills/">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Experience</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-    </section>
+    
+        <div id="content">
+            <section class="about">
+                <div class="about-content">
+                    <h1>About Me</h1>
+                </div>
+            </section>
+        </div>
+
+        <div id="footer">
+            <footer>
+                <p>&copy 2024 Made by &nbsp<a href="https://www.i4.gs" target="_blank"
+                        rel="noopener noreferrer">i4.GS</a>&nbsp&nbsp |&nbsp&nbsp Open Source Project: <a
+                        href="https://github.com/i4GS/PersonalPortfolio" target="_blank"
+                        rel="noopener noreferrer">&nbspGithub</a></p>
+            </footer>
+        </div>
+    </div>
 
     <script>
         fetch('../particlesjs-config.json')
